@@ -6,7 +6,7 @@ class Time
   end
   
   def as_json(*args)
-    getutc.strftime("%Y/%m/%d %H:%M:%S +0000")
+    getutc.iso8601
   end
   
   def self.json_create string

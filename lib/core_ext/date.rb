@@ -4,7 +4,7 @@ class Date
   end
   
   def as_json(*args)
-    strftime("%Y/%m/%d")
+    iso8601
   end
   
   def self.json_create string
