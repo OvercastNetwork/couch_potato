@@ -13,8 +13,6 @@ module CouchPotato
         CouchPotato::Config.split_design_documents_per_view = config['split_design_documents_per_view'] if config['split_design_documents_per_view']
         CouchPotato::Config.default_language = config['default_language'] if config['default_language']
       end
-    else
-      Rails.logger.warn "Rails.root/config/couchdb.yml does not exist. Not configuring a database."
     end
   end
 
